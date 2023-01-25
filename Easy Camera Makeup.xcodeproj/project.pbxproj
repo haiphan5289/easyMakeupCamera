@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B3B1D25C5849F2213A1946C /* Pods_Easy_Camera_Makeup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC31DC0910193001F2CF1FAA /* Pods_Easy_Camera_Makeup.framework */; };
+		7797D63F4391E9AECE405DFE /* Pods_Easy_Camera_Makeup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C537E7AF97EA0A72635CB954 /* Pods_Easy_Camera_Makeup.framework */; };
 		93989DE22980DBB5004BAA1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93989DE12980DBB5004BAA1C /* AppDelegate.swift */; };
 		93989DE42980DBB5004BAA1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93989DE32980DBB5004BAA1C /* SceneDelegate.swift */; };
 		93989DE62980DBB5004BAA1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93989DE52980DBB5004BAA1C /* ViewController.swift */; };
 		93989DE92980DBB5004BAA1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93989DE72980DBB5004BAA1C /* Main.storyboard */; };
 		93989DEB2980DBB6004BAA1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93989DEA2980DBB6004BAA1C /* Assets.xcassets */; };
 		93989DEE2980DBB6004BAA1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93989DEC2980DBB6004BAA1C /* LaunchScreen.storyboard */; };
+		93989DFD29812186004BAA1C /* .swiflint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 93989DFC29812186004BAA1C /* .swiflint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8BD1535290B6D240301F62DE /* Pods-Easy Camera Makeup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Camera Makeup.release.xcconfig"; path = "Target Support Files/Pods-Easy Camera Makeup/Pods-Easy Camera Makeup.release.xcconfig"; sourceTree = "<group>"; };
+		23623C639D3A793F53C90E7E /* Pods-Easy Camera Makeup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Camera Makeup.release.xcconfig"; path = "Target Support Files/Pods-Easy Camera Makeup/Pods-Easy Camera Makeup.release.xcconfig"; sourceTree = "<group>"; };
 		93989DDE2980DBB5004BAA1C /* Easy Camera Makeup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Camera Makeup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93989DE12980DBB5004BAA1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93989DE32980DBB5004BAA1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +27,9 @@
 		93989DEA2980DBB6004BAA1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93989DED2980DBB6004BAA1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93989DEF2980DBB6004BAA1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC31DC0910193001F2CF1FAA /* Pods_Easy_Camera_Makeup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easy_Camera_Makeup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4205FAB253DB6ED72C1E3CC /* Pods-Easy Camera Makeup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Camera Makeup.debug.xcconfig"; path = "Target Support Files/Pods-Easy Camera Makeup/Pods-Easy Camera Makeup.debug.xcconfig"; sourceTree = "<group>"; };
+		93989DFC29812186004BAA1C /* .swiflint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiflint.yml; sourceTree = "<group>"; };
+		999FB3D2B793C55A9D91078E /* Pods-Easy Camera Makeup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Camera Makeup.debug.xcconfig"; path = "Target Support Files/Pods-Easy Camera Makeup/Pods-Easy Camera Makeup.debug.xcconfig"; sourceTree = "<group>"; };
+		C537E7AF97EA0A72635CB954 /* Pods_Easy_Camera_Makeup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easy_Camera_Makeup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,28 +37,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B3B1D25C5849F2213A1946C /* Pods_Easy_Camera_Makeup.framework in Frameworks */,
+				7797D63F4391E9AECE405DFE /* Pods_Easy_Camera_Makeup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23753D8E501893B8063ED281 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AC31DC0910193001F2CF1FAA /* Pods_Easy_Camera_Makeup.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		93989DD52980DBB5004BAA1C = {
 			isa = PBXGroup;
 			children = (
+				93989DFC29812186004BAA1C /* .swiflint.yml */,
 				93989DE02980DBB5004BAA1C /* Easy Camera Makeup */,
 				93989DDF2980DBB5004BAA1C /* Products */,
 				C3E8D72AAB81A5D9575EC908 /* Pods */,
-				23753D8E501893B8063ED281 /* Frameworks */,
+				EAA310C3AE550EC70BB4B9FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,10 +80,18 @@
 		C3E8D72AAB81A5D9575EC908 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B4205FAB253DB6ED72C1E3CC /* Pods-Easy Camera Makeup.debug.xcconfig */,
-				8BD1535290B6D240301F62DE /* Pods-Easy Camera Makeup.release.xcconfig */,
+				999FB3D2B793C55A9D91078E /* Pods-Easy Camera Makeup.debug.xcconfig */,
+				23623C639D3A793F53C90E7E /* Pods-Easy Camera Makeup.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EAA310C3AE550EC70BB4B9FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C537E7AF97EA0A72635CB954 /* Pods_Easy_Camera_Makeup.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,11 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93989DF22980DBB6004BAA1C /* Build configuration list for PBXNativeTarget "Easy Camera Makeup" */;
 			buildPhases = (
-				568FE3E124BBBE21FDB4DE22 /* [CP] Check Pods Manifest.lock */,
+				E994842D914541456925DD44 /* [CP] Check Pods Manifest.lock */,
 				93989DDA2980DBB5004BAA1C /* Sources */,
 				93989DDB2980DBB5004BAA1C /* Frameworks */,
 				93989DDC2980DBB5004BAA1C /* Resources */,
-				4EF9462DF7A190CC7370B895 /* [CP] Embed Pods Frameworks */,
+				93989DF72981170C004BAA1C /* SwiftLint */,
+				0D4B7942183C147A4E838CA3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,13 +158,14 @@
 				93989DEE2980DBB6004BAA1C /* LaunchScreen.storyboard in Resources */,
 				93989DEB2980DBB6004BAA1C /* Assets.xcassets in Resources */,
 				93989DE92980DBB5004BAA1C /* Main.storyboard in Resources */,
+				93989DFD29812186004BAA1C /* .swiflint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4EF9462DF7A190CC7370B895 /* [CP] Embed Pods Frameworks */ = {
+		0D4B7942183C147A4E838CA3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -177,7 +182,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Easy Camera Makeup/Pods-Easy Camera Makeup-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		568FE3E124BBBE21FDB4DE22 /* [CP] Check Pods Manifest.lock */ = {
+		93989DF72981170C004BAA1C /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint --config .swiflint.yml\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		E994842D914541456925DD44 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,7 +373,7 @@
 		};
 		93989DF32980DBB6004BAA1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4205FAB253DB6ED72C1E3CC /* Pods-Easy Camera Makeup.debug.xcconfig */;
+			baseConfigurationReference = 999FB3D2B793C55A9D91078E /* Pods-Easy Camera Makeup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -380,7 +403,7 @@
 		};
 		93989DF42980DBB6004BAA1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BD1535290B6D240301F62DE /* Pods-Easy Camera Makeup.release.xcconfig */;
+			baseConfigurationReference = 23623C639D3A793F53C90E7E /* Pods-Easy Camera Makeup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
