@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B3B1D25C5849F2213A1946C /* Pods_Easy_Camera_Makeup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC31DC0910193001F2CF1FAA /* Pods_Easy_Camera_Makeup.framework */; };
 		93989DE22980DBB5004BAA1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93989DE12980DBB5004BAA1C /* AppDelegate.swift */; };
 		93989DE42980DBB5004BAA1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93989DE32980DBB5004BAA1C /* SceneDelegate.swift */; };
 		93989DE62980DBB5004BAA1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93989DE52980DBB5004BAA1C /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8BD1535290B6D240301F62DE /* Pods-Easy Camera Makeup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Camera Makeup.release.xcconfig"; path = "Target Support Files/Pods-Easy Camera Makeup/Pods-Easy Camera Makeup.release.xcconfig"; sourceTree = "<group>"; };
 		93989DDE2980DBB5004BAA1C /* Easy Camera Makeup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Camera Makeup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93989DE12980DBB5004BAA1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93989DE32980DBB5004BAA1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		93989DEA2980DBB6004BAA1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93989DED2980DBB6004BAA1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93989DEF2980DBB6004BAA1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC31DC0910193001F2CF1FAA /* Pods_Easy_Camera_Makeup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easy_Camera_Makeup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4205FAB253DB6ED72C1E3CC /* Pods-Easy Camera Makeup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Camera Makeup.debug.xcconfig"; path = "Target Support Files/Pods-Easy Camera Makeup/Pods-Easy Camera Makeup.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3B1D25C5849F2213A1946C /* Pods_Easy_Camera_Makeup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23753D8E501893B8063ED281 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC31DC0910193001F2CF1FAA /* Pods_Easy_Camera_Makeup.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		93989DD52980DBB5004BAA1C = {
 			isa = PBXGroup;
 			children = (
 				93989DE02980DBB5004BAA1C /* Easy Camera Makeup */,
 				93989DDF2980DBB5004BAA1C /* Products */,
+				C3E8D72AAB81A5D9575EC908 /* Pods */,
+				23753D8E501893B8063ED281 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = "Easy Camera Makeup";
 			sourceTree = "<group>";
 		};
+		C3E8D72AAB81A5D9575EC908 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4205FAB253DB6ED72C1E3CC /* Pods-Easy Camera Makeup.debug.xcconfig */,
+				8BD1535290B6D240301F62DE /* Pods-Easy Camera Makeup.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93989DF22980DBB6004BAA1C /* Build configuration list for PBXNativeTarget "Easy Camera Makeup" */;
 			buildPhases = (
+				568FE3E124BBBE21FDB4DE22 /* [CP] Check Pods Manifest.lock */,
 				93989DDA2980DBB5004BAA1C /* Sources */,
 				93989DDB2980DBB5004BAA1C /* Frameworks */,
 				93989DDC2980DBB5004BAA1C /* Resources */,
+				4EF9462DF7A190CC7370B895 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EF9462DF7A190CC7370B895 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Easy Camera Makeup/Pods-Easy Camera Makeup-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Easy Camera Makeup/Pods-Easy Camera Makeup-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Easy Camera Makeup/Pods-Easy Camera Makeup-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		568FE3E124BBBE21FDB4DE22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Easy Camera Makeup-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		93989DDA2980DBB5004BAA1C /* Sources */ = {
@@ -216,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +350,7 @@
 		};
 		93989DF32980DBB6004BAA1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4205FAB253DB6ED72C1E3CC /* Pods-Easy Camera Makeup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +364,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +380,7 @@
 		};
 		93989DF42980DBB6004BAA1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BD1535290B6D240301F62DE /* Pods-Easy Camera Makeup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +394,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
