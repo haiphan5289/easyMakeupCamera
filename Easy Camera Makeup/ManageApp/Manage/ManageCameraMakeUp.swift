@@ -7,6 +7,7 @@
 
 import Foundation
 import Photos
+import UIKit
 
 final class ManageCameraMakeUp {
     
@@ -23,6 +24,7 @@ final class ManageCameraMakeUp {
         
         albumsPhoto.enumerateObjects({(collection, index, object) in
             let photoInAlbum = PHAsset.fetchAssets(in: collection, options: nil)
+            let first = photoInAlbum.firstObject
             print("========= \(photoInAlbum.count)")
             print("========= \(collection.localizedTitle)")
             
@@ -30,3 +32,20 @@ final class ManageCameraMakeUp {
     }
     
 }
+extension PHAsset {
+    
+    func toImage(imageSize: CGSize) -> UIImage? {
+        var thumbnail = UIImage()
+        let imageManager = PHCachingImageManager()
+        imageManager.requestImage(for: self, targetSize: imageSize,
+                                  contentMode: .aspectFit,
+                                  options: nil, resultHandler: { image, _ in
+            guard let img = image else {
+                return
+            }
+            thumbnail = img
+        })
+        return thumbnail
+    }
+}
+

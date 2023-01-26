@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlbumsVC" customModule="Easy_Camera_Makeup" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="CSA-l4-Plv" id="qKc-e9-Hjh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,14 +19,37 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EwA-oW-PMY">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CSA-l4-Plv">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jRk-H6-TMa">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                </stackView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemYellowColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EwA-oW-PMY" secondAttribute="trailing" id="92e-P0-ZnM"/>
+                <constraint firstItem="EwA-oW-PMY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="H0r-Lw-9tM"/>
+                <constraint firstItem="EwA-oW-PMY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="TpJ-Mw-Cjr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EwA-oW-PMY" secondAttribute="bottom" id="eeN-p6-x4o"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="141"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

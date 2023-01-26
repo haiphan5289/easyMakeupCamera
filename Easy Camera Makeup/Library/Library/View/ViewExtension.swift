@@ -72,25 +72,25 @@ extension UIView {
 //    }
 
     /// SwifterSwift: Border width of view; also inspectable from Storyboard.
-    @IBInspectable var borderWidth: CGFloat {
-        get {
-            return layer.borderWidth
-        }
-        set {
-            layer.borderWidth = newValue
-        }
-    }
+//    @IBInspectable var borderWidth: CGFloat {
+//        get {
+//            return layer.borderWidth
+//        }
+//        set {
+//            layer.borderWidth = newValue
+//        }
+//    }
 
     /// SwifterSwift: Corner radius of view; also inspectable from Storyboard.
-    @IBInspectable var cornerRadius: CGFloat {
-        get {
-            return layer.cornerRadius
-        }
-        set {
-            layer.masksToBounds = true
-            layer.cornerRadius = abs(CGFloat(Int(newValue * 100)) / 100)
-        }
-    }
+//    @IBInspectable var cornerRadius: CGFloat {
+//        get {
+//            return layer.cornerRadius
+//        }
+//        set {
+//            layer.masksToBounds = true
+//            layer.cornerRadius = abs(CGFloat(Int(newValue * 100)) / 100)
+//        }
+//    }
 }
 extension UIView {
 //    func shake() {
@@ -100,15 +100,15 @@ extension UIView {
 //        animation.values = [-20.0, 20.0, -20.0, 20.0, -10.0, 10.0, -5.0, 5.0, 0.0 ]
 //        layer.add(animation, forKey: "shake")
 //    }
-    func shake(){
-            let animation = CABasicAnimation(keyPath: "position")
-            animation.duration = 0.07
-            animation.repeatCount = 3
-            animation.autoreverses = true
-            animation.fromValue = NSValue(cgPoint: CGPoint(x: self.center.x, y: self.center.y - 5))
-            animation.toValue = NSValue(cgPoint: CGPoint(x: self.center.x, y: self.center.y + 5))
-            self.layer.add(animation, forKey: "position")
-        }
+//    func shake(){
+//            let animation = CABasicAnimation(keyPath: "position")
+//            animation.duration = 0.07
+//            animation.repeatCount = 3
+//            animation.autoreverses = true
+//            animation.fromValue = NSValue(cgPoint: CGPoint(x: self.center.x, y: self.center.y - 5))
+//            animation.toValue = NSValue(cgPoint: CGPoint(x: self.center.x, y: self.center.y + 5))
+//            self.layer.add(animation, forKey: "position")
+//        }
 }
 extension UIView {
     
