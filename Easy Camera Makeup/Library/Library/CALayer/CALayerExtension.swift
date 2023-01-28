@@ -11,11 +11,11 @@ import UIKit
 //extension CA
 extension CALayer {
   func applySketchShadow(
-    color: UIColor = .black,
-    alpha: Float = 0.5,
+    color: UIColor = .red,
+    alpha: Float = 0.6,
     x: CGFloat = 0,
-    y: CGFloat = 2,
-    blur: CGFloat = 4,
+    y: CGFloat = 5,
+    blur: CGFloat = 14,
     spread: CGFloat = 0)
   {
     masksToBounds = false

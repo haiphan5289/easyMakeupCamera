@@ -11,7 +11,9 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class AlbumsVC: UIViewController, SetupBaseCollection {
+class AlbumsVC: BaseViewController,
+                SetupBaseCollection,
+                ActionEditImageProtocol {
     
     struct Constant {
         static let heihgtCell: Int = 100
@@ -25,7 +27,6 @@ class AlbumsVC: UIViewController, SetupBaseCollection {
     // Add here your view model
     private var viewModel: AlbumsVM = AlbumsVM()
     private var sizeCell: CGSize = .zero
-    private let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
@@ -37,23 +38,41 @@ extension AlbumsVC {
     
     private func setupUI() {
         // Add here the setup for the UI
+        navigationType = .hide
+        
         setupCollectionView(collectionView: collectionView, delegate: self, name: AlbumsCell.self)
         collectionView.contentInset = UIEdgeInsets(top: Constant.distanceSide,
                                                    left: Constant.distanceSide,
                                                    bottom: Constant.distanceSide,
                                                    right: Constant.distanceSide)
         DispatchQueue.main.async {
-            self.sizeCell = CGSize(width: self.calculaterSizeCell(), height: Constant.heihgtCell)
+            self.sizeCell = CGSize(width: self.calculaterSizeCell(), height: self.calculaterSizeCell() + 100)
             self.collectionView.reloadData()
         }
     }
     
     private func setupRX() {
         // Add here the setup for the RX
-        Observable.just([1,2,3,4])
+        ManageCameraMakeUp.shared.albumsPhoto
+            .withUnretained(self)
+            .debounce(.milliseconds(200), scheduler: MainScheduler.instance)
+            .bind { owner, _ in
+                owner.collectionView.reloadData()
+            }.disposed(by: disposeBag)
+        
+        ManageCameraMakeUp.shared.albumsPhoto
             .bind(to: self.collectionView.rx.items(cellIdentifier: AlbumsCell.identifier,
                                                    cellType: AlbumsCell.self)) { row, data, cell in
-                cell.backgroundColor = .red
+                cell.bindModel(model: data)
+            }.disposed(by: disposeBag)
+        
+        self.collectionView
+            .rx
+            .itemSelected
+            .withUnretained(self)
+            .bind { owner, idx in
+                let item = ManageCameraMakeUp.shared.albumsPhoto.value[idx.row]
+                owner.openSelectImage(album: item)
             }.disposed(by: disposeBag)
     }
     
